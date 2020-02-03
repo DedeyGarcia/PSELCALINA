@@ -1,4 +1,12 @@
 <?php 
+
+/*
+
+Esse código é uma variante do código para envio de emails dessa fonte:
+https://form.guide/contact-form/php-email-contact-form.html
+
+*/
+
 $errors = '';
 $myemail = 'andreylucas.garcia@gmail.com';//<-----Put Your email address here.
 $senderemail = 'noreply@cursomusica.com';
