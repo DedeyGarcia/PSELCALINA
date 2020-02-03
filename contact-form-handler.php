@@ -36,7 +36,7 @@ if( empty($errors))
 	$to = $myemail; 
 	$email_subject = "Formulário do Música Online de $name";
 	$email_body = "Obrigado por se inscrever no Música Online.\n ".
-	" Aqui estão seus dados do formulário:\n Nome: $name \n Email: $email_address \n Telefone: $phone \n Curso Escolhido: $curso"; 
+	"Aqui estão os dados do formulário:\n Nome: $name \n Email: $email_address \n Telefone: $phone \n Curso Escolhido: $curso"; 
 	
 	$headers = "From: $senderemail\n"; 
 	$headers .= "Reply-To: $email_address";
