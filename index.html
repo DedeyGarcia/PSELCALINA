@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Música Online</title>
+        <link rel="shortcut icon" href="imgs/logotop.jfif">
+        
+        <!-- Inserindo o Bootstrap no código -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <style>       
+        #professores {
+            height: 400px;
+            background-color: white;
+        }    
+
+        #profs {
+            height: 400px;
+            background-color: white;
+        }    
+
+        #depoimentos {
+            height: 275px;
+            background-color: #385773;
+        }
+        </style>
+    </head>
+
+    <body>
+        <!--Seção da barra de navegação-->
+        <nav class="navbar  sticky-top navbar-expand-lg navbar-dark" style="background-color: #071826;">
+            <a class="navbar-brand" href="index.html">
+                <img src="imgs/logo.png" width="30" height="30" alt="musica online">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#inscreva-se">Inscreva-se</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#fundo_profs">Professores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Contato</a>
+                  </li>
+                  
+                  
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                      </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Seção para o resto da pagina-->
+        <div class="container-fluid"> 
+
+        <!--Seção do topo do site, apresentacao e inscricao-->
+            <div class="row" style="background-color: #0B1C40;">
+                <div  class="col-lg-1" ></div>
+                <div  class="col-lg-4">
+                    <h1 class="text-center" style="color: #F2295F;"><br>Quer aprender <strong style="color: #FFFFFF;"> Música </strong> e não sabe por onde começar? </h1>
+                    <p  class="text-center" style="color: white;"> <br> Aqui no <strong>Música Online</strong>  você irá aprender a tocar diversos instrumentos musicais, como violão, guitarra, baixo, piano e bateria com os melhores professores.</p>
+                    <h2 class="text-center" style="color: #F2295F;"><br>Sobre o <strong>Música Online</strong></h2>
+                    <p  class="text-center" style="color: white;"> <br>Desde 2020 destribuímos diversos cursos on-line focados no aprendizado de instrumentos musicais</p>
+                    <p  class="text-center" style="color: white;">Temos aulas tanto para completos iniciantes quanto para quem já tem afinidade com o instrumento. Então inscreva-se ao lado para matricular-se em um de nossos cursos.<br><br></p>
+
+                </div>  
+                <div  class="col-lg-2" ></div>
+                <div  class="col-lg-4">
+                        <h1 id="inscreva-se"class="text-center" style="color: #F2295F;"><br>Inscreva-se !</h1>
+                        <form method="POST" name="contactform" action="contact-form-handler.php">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput3" style="color: white;">Nome:</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Digite seu nome" required  name="name">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlInput1" style="color: white;">Endereço de email:</label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com" required name="email">
+                            </div>
+                            <div class="form-group"> 
+                                <label for="exampleFormControlInput2" style="color: white;">Celular:</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Digite seu Celular" required name="phone">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1" style="color: white;">Escolha seu curso:</label>
+                              <select class="form-control" id="exampleFormControlSelect1" name="curso">
+                                <option>Violão</option>
+                                <option>Guitarra</option>
+                                <option>Baixo</option>
+                                <option>Bateria</option>
+                                <option>Piano</option>
+                              </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                          </form>
+                          <br><br>
+                </div>
+                <div class="col-lg-1" ></div>
+            </div>
+
+            <!--Seção da apresentação dos professores-->
+            <div class="row" style="height: 200px;">
+                <div id="fundo_profs" class="col-lg-12">
+                    <h1 class="text-center"> <br>Conheça alguns de nossos professores!</h1>
+                </div>
+            </div>
+
+            <div class="row" >
+                <div class="col-lg-4">
+                    <center>
+                        <img src="imgs/guitarrista2.jpg" alt="" width="300px" height="400px">
+                    <h2>Jorge,</h2>
+                    <h5>Professor de Guitarra e Violão</h5>
+                    </center>                    
+                </div>                   
+
+                <div class="col-lg-4">
+                    <center>
+                    <img src="imgs/baixista.jpg"  width="300px" height="400px">
+                    <h2>Marcinho,</h2>
+                    <h5>Professor de Baixo</h5>
+                    <center>
+                </div>
+                    
+
+                <div class="col-lg-4">
+                    <center>
+                    <img src="imgs/baterista2.jpg" alt=""  width="300" height="400">
+                    <h2>Jeff,</h2>
+                    <h5>Professor de Bateria</h5>
+                    <center>
+
+                </div>
+
+            </div>
+
+            
+            <!--Seção dos Depoimentos-->
+            <div class="row">
+                <div id="depoimentos"class="col-lg-12">
+                    <h1 class="text-center" style="color: white;"> <br> Depoimentos</h1>
+                    <h2 class="text-center" style="color: white;"> <br> Veja o que nossos alunos dizem sobre nossos cursos !</h2>
+                </div>
+            </div>
+
+
+
+            <div class="row" style="background-color: #385773;">
+                <div class="col-lg-2" ></div>
+                <div class="col-lg-5" >
+                    <h1 class="text-center mb-5" style="color: white;">Zézinho Neves</h1>
+                    <h3 class="text-center" style="color: white;">"Eu nunca havia tocado qualquer tipo de instrumento musical antes, foi quando me matriculei na <strong>Música Online</strong>, e em <strong>2 meses</strong> já estou tocando violão !"</h3>
+                </div>
+                <div class="col-lg-3" >
+                        <img src="imgs/man.png" alt="boy" class="img-thumbnail">
+                </div>
+                <div class="col-lg-2" ></div>
+            </div>
+
+            <div class="row" style="background-color: #385773; height: 100px;"></div>
+            
+            <div class="row" style="background-color: #385773;">
+                <div class="col-lg-2" ></div>
+                <div class="col-lg-3" >
+                        <img src="imgs/girl.png" alt="boy" class="img-thumbnail">
+                </div>
+                <div class="col-lg-5" >
+                    <h1 class="text-center mb-5" style="color:white;">Isabel da Silva</h1>
+                    <h3 class="text-center" style="color: white;">"Já toco piano há 2 anos, mas desde que entrei na <strong>Música Online</strong> fiquei muito melhor do que antes !"</h4>
+                </div>
+                <div class="col-lg-2" ></div>
+            </div>
+
+            <div class="row" style="background-color: #385773; height: 100px;"></div>
+
+
+            <!--Seção final e de contato do site-->
+            <div class="row" style="background-color: #1F3140; height: 250px;" id="sobre">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h2 class="text-center" style="color: white;"> <br> Alguma dúvida? Contate-nos</h2>
+                    <p class="text-center" style="color: white;"> <br> Email: musicaonline@hotmail.com <br> Telefone: (16) 6654-3298 <br> Rua Moacir Franco, 6661 - São Carlos/SP</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+      
+           
+        <!-- Inserindo o Bootstrap no código -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
