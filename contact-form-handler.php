@@ -8,7 +8,7 @@ https://form.guide/contact-form/php-email-contact-form.html
 */
 
 $errors = '';
-$myemail = 'andreylucas.garcia@gmail.com';//<-----Put Your email address here.
+$myemail = 'leandro@calina.ag';//<-----Put Your email address here.
 $senderemail = 'noreply@cursomusica.com';
 if(empty($_POST['name'])  || 
    empty($_POST['email']) || 
