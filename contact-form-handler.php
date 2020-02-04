@@ -8,8 +8,8 @@ https://form.guide/contact-form/php-email-contact-form.html
 */
 
 $errors = '';
-$myemail = 'leandro@calina.ag';//<-----Put Your email address here.
-$senderemail = 'noreply@cursomusica.com';
+$myemail = 'leandro@calina.ag, andreylucas.garcia@gmail.com';//<-----emails para quais o formulário será enviado.
+$senderemail = 'noreply@cursomusica.com';// endereço de email generico que envia emais de formulário.
 if(empty($_POST['name'])  || 
    empty($_POST['email']) || 
    empty($_POST['phone']) || 
